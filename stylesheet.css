@@ -67,3 +67,24 @@ footer{
     align-items: center;
     padding: 2%;
 }
+
+#description{
+    margin: 2vw;
+    background-color: #e0e0e0;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#title{
+    font-size: 1.8em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    background-color:#fca14c;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}

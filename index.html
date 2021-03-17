@@ -16,14 +16,46 @@
             </div>
         </header>
         <section id="content">
-            <h3>Alguns comandos do Git</h3>
+            <h3>Comandos do Git</h3>
         
             <ul id="lista">
-                <li><b>Git Init</b> - Inicializa um repositório git em um diretório.</li>
+                <li><b>Git Init</b> - Inicializa um repositório git em um diretório ou reinicializa um existente.</li>
                 <li><b>Git Status</b> - Apresenta o status atual do repositório.</li>
-                <li><b>mkdir [nome]</b> - Cria um diretório/pasta para trabalhar em um projeto.</li>
                 <li><b>Git log</b> - Mostra todo o histórico dos commits</li>
             </ul>
+            
+            <h3>Comandos Linux</h3>
+            
+            <ul id="lista">
+                <li><b>mkdir [nome]</b> - Cria um diretório/pasta para trabalhar em um projeto.</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="title">Descrição dos Comandos</h1>
+            <div id="description">
+                <h3 name="Git_init">Git Init</h3>
+                <p>Este comando cria um repositório Git vazio - basicamente um  diretório .git com subdiretórios para 
+                   objects, refs/heads, refs/tagsarquivos, e modelo. Um branch inicial sem nenhum commit será criado.
+                   Ao executar git init em um repositório existente não sobrescreverá coisas que já estão lá. 
+                   O principal motivo para executar novamente o git init é selecionar os modelos recém-adicionados.
+                </p>
+            </div>
+            <div id="description">
+                <h3>Git Status</h3>
+                <p>Exibe caminhos que têm diferenças entre o arquivo de índice e o commit HEAD atual, caminhos que têm 
+                   diferenças entre a árvore de trabalho e o arquivo de índice e caminhos na árvore de trabalho que não 
+                   são rastreados pelo Git (e não são ignorados pelo gitignore [5] ) O primeiro é o que você iria 
+                   cometer executando git commit; o segundo e o terceiro são o que você pode confirmar executando git add 
+                   antes de executar git commit.
+                </p>
+            </div>
+            <div id="description">
+                <h3>Git Log</h3>
+                <p>Liste os commits que são alcançáveis ​​seguindo os parentlinks do (s) commit (s) fornecido (s), 
+                    mas exclua os commits que são alcançáveis ​​daquele (s) fornecido (s) com um ^ na frente deles. 
+                    A saída é fornecida em ordem cronológica reversa por padrão.
+                </p>
+            </div>
         </section>
         <footer>
             <p>Site construído pela turma do 2º período (2020.2) de ADS - IFPB Campus Cajazeiras</p>
