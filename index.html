@@ -22,6 +22,8 @@
                 <li><b>Git Init</b> - Inicializa um repositório git em um diretório ou reinicializa um existente.</li>
                 <li><b>Git Status</b> - Apresenta o status atual do repositório.</li>
                 <li><b>Git log</b> - Mostra todo o histórico dos commits</li>
+                <li><b>Git branch [nome_da_branch]</b> - Cria uma nova branch</li>
+                <li><b>Git checkout</b> - Navegar pelas branch's criadas</li>
                 <li><b>Git clone</b> - Cria um clone de um repositório do github</li>
             </ul>
             
@@ -58,6 +60,22 @@
                 </p>
             </div>
             <div id="description">
+                <h3>Git branch</h3>
+                <p>
+                    O comando git branch [nome_da_branch] permite que o usuário crie uma nova ramificação para poder editar
+                    o código sem interferir na branch principal. Uma ramificação no git é um ponteiro para as alterações feitas 
+                    nos arquivos do projeto. Essa ramificação é muito utilizada em situações que o usuário deseja adicionar um novo recurso 
+                    ou corrigir um erro, gerando uma nova ramificação garantindo que o código da ramificação criada não seja mesclado nos arquivos 
+                    do projeto principal.
+                </p>
+            </div>
+            <div id="description">
+                <h3>Git checkout</h3>
+                <p>
+                    O comando git checkout permite que o usuário altere entre as branch's criadas, esse comando é utilizado com o mesmo propósito do
+                    git branch, pois com ele o usuário muda para a branch criada para fazer novas atualizações, o comando é utulizado da seguinte forma:
+                    "git checkout [nome_da_branch]". O comando git branch -b [nome_da_branch] cria uma branch e jé altera para a branch criada, fazendo
+                    uma parte do trabalho do git checkout.
                 <h3>Git clone</h3>
                 <p>O comando git clone é usado para criar uma cópia de um repositório específico dentro de um repositório. 
                     
