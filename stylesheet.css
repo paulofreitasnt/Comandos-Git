@@ -51,6 +51,11 @@ header img {
     float: right;
 }
 
+#logIf{
+    width: 15%;
+    position: absolute;
+    margin-right: 100vw;
+}
 #content {
     margin: 2vw;
     background-color: #e0e0e0;
