@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
     <meta charset="UTF-8">
@@ -14,17 +14,27 @@
             <div id="logo">
                 <img src="logo.png">
             </div>
+            <div id="logIf">
+                <img src="logoIf.png" >
+            </div>
+           
         </header>
+       
         <section id="content">
             <h3>Comandos do Git</h3>
         
             <ul id="lista">
+               
                 <li><b>Git Init</b> - Inicializa um repositório git em um diretório ou reinicializa um existente.</li>
                 <li><b>Git Status</b> - Apresenta o status atual do repositório.</li>
                 <li><b>Git log</b> - Mostra todo o histórico dos commits</li>
                 <li><b>Git branch [nome_da_branch]</b> - Cria uma nova branch</li>
                 <li><b>Git checkout</b> - Navegar pelas branch's criadas</li>
                 <li><b>Git clone</b> - Cria um clone de um repositório do github</li>
+                <li><b>Git add [nome_do_arquivo]</b> - Armazena o arquivo ou arquivos no
+                     no seu <em>Stage</em> para que sejam <em>comitados</em> posteriormente.</li>
+                <li><b>git config --global user.name "[seu-nome]"</b> - Setar um usuário</li> 
+                <li><b>git config --global user.email [seu-email]</b>- Setar um email</li> 
             </ul>
             
             <h3>Comandos Linux</h3>
@@ -76,8 +86,29 @@
                     git branch, pois com ele o usuário muda para a branch criada para fazer novas atualizações, o comando é utulizado da seguinte forma:
                     "git checkout [nome_da_branch]". O comando git branch -b [nome_da_branch] cria uma branch e jé altera para a branch criada, fazendo
                     uma parte do trabalho do git checkout.
+                
+            </div>
+            <div id="description">
                 <h3>Git clone</h3>
                 <p>O comando git clone é usado para criar uma cópia de um repositório específico dentro de um repositório. 
+                    
+                </p>
+            </div>
+            <div id="description">
+                <h3>Git add [nome_do_arquivo]</h3>
+                <p>O comando git add [nome-do-arquivo] é utilizado para adicionar um arquivo ou realizar alterações em um arquivo existente no 
+                    diretório, ao ser adicionado, este arquivo ou alteração são armazenados no <em>stage</em>  e posteriormente podem ser comitados para 
+                    o repositório git. <br> Ex: <b> git add</b> <em>index.html</em>
+                    
+                </p>
+            </div>
+            <div id="description">
+                <h3>git config --global user.name "[seu-nome]" e git config --global user.email [seu-email] </h3>
+                <p>Estes comandos git são tutlizados para definir seu usuário e email no git, o nome será usado para associar os 
+                    commits aos usuários que realizaram alguma alteração no repositório. <br>
+                    Ex: <b>git config --global user.name </b> <em>"João padrão"</em> <br>
+                    Ex: <b>e git config --global user.email </b> <em>joaopadrao@mail.com</em>
+                
                     
                 </p>
             </div>
