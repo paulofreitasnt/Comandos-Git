@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-li { list-style-type: circle; color: blue;}
+li { list-style-type: circle; color: rgb(0, 0, 0);}
 
 /* Importando fonte do Google */
 
@@ -28,7 +28,7 @@ body {
 }
 
 .container{
-    width: 100vw;
+    width: auto;
     height: auto;
 }
 
@@ -38,7 +38,7 @@ header{
     flex-direction: row;
     width: 100vw;
     height: auto;
-    background-color:#fca14c;
+    background-color:#2f0474;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,7 @@ header img {
 footer{
     width: 100vw;
     height: auto;
-    background-color:#fca14c;
+    background-color:#2f0474;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@ footer{
     flex-direction: row;
     width: 100vw;
     height: auto;
-    background-color:#fca14c;
+    background-color:#2f0474;
     color: #fff;
     justify-content: center;
     align-items: center;
