@@ -92,9 +92,12 @@ footer{
     flex-direction: row;
     width: 100vw;
     height: auto;
-    background-color:#fca14c;
     color: #fff;
     justify-content: center;
     align-items: center;
     padding: 1%;
+}
+
+.background-color-text{
+    background-color:#3366cc;
 }
