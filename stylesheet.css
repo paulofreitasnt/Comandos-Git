@@ -48,11 +48,11 @@ header{
     flex-direction: row;
     width: 100vw;
     height: auto;
-    background-color:#2f0474;
     color: #fff;
     justify-content: center;
     align-items: center;
     padding: 1%;
+    
 }
 
 
@@ -67,12 +67,23 @@ header img {
     height: 20%;
     float: right;
 }
+.TextHeader{
+    
+    position: absolute;
+    left: 45%;
+   
+}
 
 #logIf{
     animation: aparecer 1s;
     width: 15%;
     position: absolute;
     margin-right: 100vw;
+}
+#logo{
+    position: relative;
+    left: 36%;
+
 }
 #content {
     animation: aparecer 1s;
@@ -85,7 +96,6 @@ footer{
     animation: aparecer 1s;
     width: 100vw;
     height: auto;
-    background-color:#2f0474;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -116,5 +126,6 @@ footer{
 }
 
 .background-color-text{
-    background-color:#3366cc;
+    background-color: black;
+    opacity: 85%;
 }
