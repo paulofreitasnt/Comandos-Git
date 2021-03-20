@@ -15,6 +15,15 @@ li { list-style-type: circle; color: rgb(0, 0, 0);}
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     background-color:#f5f5f5;
     color:#181818;
@@ -33,6 +42,7 @@ body {
 }
 
 header{
+    animation: aparecer 1s;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -47,27 +57,32 @@ header{
 
 
 h1{
+    animation: aparecer 1s;
     font-size: 1.8em;
 }
 
 header img {
+    animation: aparecer 1s;
     width: 20%;
     height: 20%;
     float: right;
 }
 
 #logIf{
+    animation: aparecer 1s;
     width: 15%;
     position: absolute;
     margin-right: 100vw;
 }
 #content {
+    animation: aparecer 1s;
     margin: 2vw;
     background-color: #e0e0e0;
     padding: 2%;
 }
 
 footer{
+    animation: aparecer 1s;
     width: 100vw;
     height: auto;
     background-color:#2f0474;
@@ -79,6 +94,7 @@ footer{
 }
 
 #description{
+    animation: aparecer 1s;
     margin: 2vw;
     background-color: #e0e0e0;
     padding: 2%;
@@ -86,6 +102,7 @@ footer{
 }
 
 #title{
+    animation: aparecer 1s;
     font-size: 1.8em;
     display: flex;
     flex-wrap: nowrap;
