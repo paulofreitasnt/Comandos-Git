@@ -27,7 +27,21 @@ body {
     font-size: 1.2em;
     margin: 0;
 }
-
+.top-botao{
+	background-color:white;
+	padding: 20px;
+	width: 80px;
+	border-radius: 20px;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+.top-botao a{
+	text-decoration: none;
+	padding: 20px;
+	color: black;
+}
 .background-color-text{
     display: flex;
     flex-direction: row;
