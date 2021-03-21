@@ -19,6 +19,10 @@ body {
     margin: 0;
 }
 
+.mascara {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .background-color-text{
     display: flex;
     flex-direction: row;
@@ -47,6 +51,11 @@ h1{
 .logo img{
     width: auto;
     height: 100%;
+}
+
+.title-h1 {
+    width: 90%;
+    margin: 0 auto;
 }
 
 footer{
