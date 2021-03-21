@@ -1,4 +1,7 @@
-li { list-style-type: circle; color: rgb(0, 0, 0);}
+li { 
+    list-style-type: circle; 
+    color: rgb(0, 0, 0);
+}
 
 /* Importando fonte do Google */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -25,20 +28,26 @@ body {
     margin: 0;
 }
 
-.container{
-    height: auto;
-}
-
-header{
-    animation: aparecer 1s;
+.background-color-text{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    height: auto;
-    color: #fff;
     align-items: center;
+    animation: aparecer 1s;
+    background-color: black;
+    color: #fff;
+    opacity: 85%;
+    margin: 0;
     padding: 1%;
+}
+
+header{
+    font-size: unset;
+}
+
+h1{
+    font-size: 1.8em;
 }
 
 .logo{
@@ -49,11 +58,6 @@ header{
 .logo img{
     width: auto;
     height: 100%;
-}
-
-h1{
-    animation: aparecer 1s;
-    font-size: 1.8em;
 }
 
 footer{
@@ -83,27 +87,7 @@ footer{
     height: auto;
     width: 100%;
     max-width: 800px;
-
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-}
-
-#title{
-    animation: aparecer 1s;
-    font-size: 1.8em;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    height: auto;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-}
-
-.background-color-text{
-    background-color: black;
-    opacity: 85%;
-    margin: 0;
 }
