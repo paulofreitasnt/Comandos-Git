@@ -6,15 +6,6 @@ li {
 /* Importando fonte do Google */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-@keyframes aparecer{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 body {
     background: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kZXxlbnwwfHwwfA%3D%3D&amp;ixlib=rb-1.2.1&amp;w=1000&amp;q=80")
     no-repeat center center fixed;
@@ -34,7 +25,6 @@ body {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    animation: aparecer 1s;
     background-color: black;
     color: #fff;
     opacity: 85%;
@@ -51,7 +41,6 @@ h1{
 }
 
 .logo{
-    animation: aparecer 1s;
     height: 60px;
 }
 
@@ -61,7 +50,6 @@ h1{
 }
 
 footer{
-    animation: aparecer 1s;
     height: auto;
     color: #fff;
     display: flex;
@@ -71,7 +59,6 @@ footer{
 }
 
 .description{
-    animation: aparecer 1s;
     margin: 2vw 4vw 2vw;
     background-color: #e0e0e0;
     padding: 2%;
@@ -83,6 +70,7 @@ footer{
 }
 
 .description img{
+    anima_quando_visivel:scale-in;
     display: block;
     height: auto;
     width: 100%;
@@ -90,4 +78,31 @@ footer{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+[anima_quando_visivel="aparece"] { 
+    transition: .4s;
+    opacity: 0;
+}
+[anima_quando_visivel="aparece"].visivel {
+    opacity: 1;
+}
+
+[anima_quando_visivel="cresce"] { 
+    transition: .5s;
+    transform: scale(.8);
+}
+
+[anima_quando_visivel="cresce"].visivel {
+    transform: scale(1);
+}
+
+[anima_quando_visivel="abre"] { 
+    transition: .5s;
+    transform: scaleY(0);
+}
+
+[anima_quando_visivel="abre"].visivel {
+    transform: scale(1);
+    transform: scaleY(1);
 }

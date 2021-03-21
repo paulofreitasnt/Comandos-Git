@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas de Comandos do Git</title>
-    <link rel ="shortcut icon" type ="image/png" href ="img/logo.png"/> 
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 </head>
 
 <body>
     <header class="background-color-text">
         <div class="logo">
-            <img src="img/logo.png">
+            <img src="img/logo.png" anima_quando_visivel="cresce">
         </div>
-        <h1> Comandos git</h1>
+        <h1 anima_quando_visivel="cresce"> Comandos git</h1>
         <div class="logo">
-            <img src="img/logoIf.png">
+            <img src="img/logoIf.png" anima_quando_visivel="cresce">
         </div>
     </header>
 
@@ -47,8 +47,8 @@
         </ul>
     </section>
     <section>
-        <h1 class="background-color-text">Descrição dos Comandos</h1>
-        <div class="description">
+        <h1 class="background-color-text" anima_quando_visivel="cresce">Descrição dos Comandos</h1>
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git Init</h3>
             <p>Este comando cria um repositório Git vazio - basicamente um diretório .git com subdiretórios para
                 objects, refs/heads, refs/tagsarquivos, e modelo. Um branch inicial sem nenhum commit será criado.
@@ -56,7 +56,7 @@
                 O principal motivo para executar novamente o git init é selecionar os modelos recém-adicionados.
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git Status</h3>
             <p>Exibe caminhos que têm diferenças entre o arquivo de índice e o commit HEAD atual, caminhos que têm
                 diferenças entre a árvore de trabalho e o arquivo de índice e caminhos na árvore de trabalho que não
@@ -66,14 +66,14 @@
                 antes de executar git commit.
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git Log</h3>
             <p>Liste os commits que são alcançáveis ​​seguindo os parentlinks do (s) commit (s) fornecido (s),
                 mas exclua os commits que são alcançáveis ​​daquele (s) fornecido (s) com um ^ na frente deles.
                 A saída é fornecida em ordem cronológica reversa por padrão.
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git branch</h3>
             <p>
                 O comando git branch [nome_da_branch] permite que o usuário crie uma nova ramificação para poder
@@ -87,7 +87,7 @@
                 do projeto principal.
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git checkout</h3>
             <p>
                 O comando git checkout permite que o usuário altere entre as branch's criadas, esse comando é
@@ -98,13 +98,13 @@
                 altera para a branch criada, fazendo
                 uma parte do trabalho do git checkout.
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git clone</h3>
             <p>O comando git clone é usado para criar uma cópia de um repositório específico dentro de um
                 repositório.
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git add [nome_do_arquivo]</h3>
             <p>O comando git add [nome-do-arquivo] é utilizado para adicionar um arquivo ou realizar alterações em
                 um arquivo existente no
@@ -113,7 +113,7 @@
                 o repositório git. <br> Ex: <b> git add</b> <em>index.html</em>
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>git config --global user.name "[seu-nome]" e git config --global user.email [seu-email] </h3>
             <p>Estes comandos git são tutlizados para definir seu usuário e email no git, o nome será usado para
                 associar os
@@ -122,7 +122,7 @@
                 Ex: <b>e git config --global user.email </b> <em>joaopadrao@mail.com</em>
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>.gitignore</h3>
             <p>É extremamente normal ignorar arquivos no Git para não salvarmos arquivos de configuração dos nossos
                 editores,<br>
@@ -130,7 +130,7 @@
                 Para isso criamos um arquivo chamado .gitignore e adicionamos os nomes dos arquivos nele. <br>
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>Git merge</h3>
             <p>
                 O comando git merge permite que você pegue as linhas de desenvolvimento independentes criadas pelo
@@ -138,7 +138,7 @@
             </p>
             <img src="img/merge.png">
         </div>
-        <div class='description'>
+        <div class='description' anima_quando_visivel="aparece">
             <h3>git revert [hash_do_commit ou nome_do_commit]</h3>
             <p>
                 Esse comando cria um novo commit ignorando os commit passados em seu parametro.
@@ -146,7 +146,7 @@
                 revertido pelo proprio git revert.
             </p>
         </div>
-        <div class="description">
+        <div class="description" anima_quando_visivel="aparece">
             <h3>$ nano</h3>
             <p>Esse comando cria um arquivo diretamente do terminal sem precisar usar alguma IDE, por exemplo:" $
                 nano index.html",
@@ -156,9 +156,10 @@
             </p>
         </div>
     </section>
-    <footer class="background-color-text">
+    <footer class="background-color-text" anima_quando_visivel="abre">
         <p>Site construído pela turma do 2º período (2020.2) de ADS - IFPB Campus Cajazeiras</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
