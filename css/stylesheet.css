@@ -81,16 +81,21 @@ footer{
 }
 
 [anima_quando_visivel="aparece"] { 
-    transition: .4s;
-    opacity: 0;
+    transition: 1s;
+    opacity: 0.5;
+    
+    border-right: 10px;
+    border-left: 10px;
 }
 [anima_quando_visivel="aparece"].visivel {
     opacity: 1;
+    border-right: 0px;
+    border-left: 0px;
 }
 
 [anima_quando_visivel="cresce"] { 
     transition: .5s;
-    transform: scale(.8);
+    transform: scale(0);
 }
 
 [anima_quando_visivel="cresce"].visivel {
