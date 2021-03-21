@@ -96,6 +96,14 @@ footer{
     border-radius: 5px;
 }
 
+.description img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    justify-self: center;
+}
+
 #title{
     animation: aparecer 1s;
     font-size: 1.8em;
