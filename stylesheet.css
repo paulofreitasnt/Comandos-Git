@@ -45,6 +45,12 @@ h1{
     font-size: 1.8em;
 }
 
+li:hover{
+
+color:rgb(88, 83, 155);
+
+}
+
 header img {
     width: 20%;
     height: 20%;
