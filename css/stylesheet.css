@@ -1,18 +1,6 @@
-/* Reset */
-
-.teste{
-    margin: 0 auto;
-    padding: 0 auto;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-
 li { list-style-type: circle; color: rgb(0, 0, 0);}
 
 /* Importando fonte do Google */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @keyframes aparecer{
