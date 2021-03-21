@@ -34,6 +34,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    margin: 0;
 }
 
 .container{
@@ -44,47 +45,31 @@ body {
 header{
     animation: aparecer 1s;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     width: 100vw;
     height: auto;
     color: #fff;
-    justify-content: center;
     align-items: center;
     padding: 1%;
-    
 }
 
+.logo{
+    animation: aparecer 1s;
+    height: 60px;
+}
+
+.logo img{
+    width: auto;
+    height: 100%;
+}
 
 h1{
     animation: aparecer 1s;
     font-size: 1.8em;
 }
 
-header img {
-    animation: aparecer 1s;
-    width: 20%;
-    height: 20%;
-    float: right;
-}
-.TextHeader{
-    
-    position: absolute;
-    left: 45%;
-   
-}
-
-#logIf{
-    animation: aparecer 1s;
-    width: 15%;
-    position: absolute;
-    margin-right: 100vw;
-}
-#logo{
-    position: relative;
-    left: 36%;
-
-}
 #content {
     animation: aparecer 1s;
     margin: 2vw;
