@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,11 @@
     <div class="container">
         <header class="background-color-text">
             <div class="logo">
-                <img src="logo.png">
+                <img src="img/logo.png">
             </div>
             <h1> Comandos git</h1>
             <div class="logo">
-                <img src="logoIf.png">
+                <img src="img/logoIf.png">
             </div>
         </header>
 
@@ -38,6 +38,7 @@
                 <li><b>git config --global user.email [seu-email]</b>- Setar um email</li>
                 <li><b>Git ignore </b> - Ignorando Arquivos</li>
                 <li><b>Git merge </b>-Permite que você pegue as linhas de desenvolvimento independentes criadas pelo git branch e as integre em um único branch.</li>
+                <li><b>git revert [hash_do_commit ou nome_do_commit]</b> - Permite reverter commits existentes</li>
             </ul>
             <br>
             <h3>Comandos Linux</h3>
@@ -140,7 +141,14 @@
                 <p>
                     O comando git merge permite que você pegue as linhas de desenvolvimento independentes criadas pelo git branch e as integre em um único branch. Observe abaixo um exemplo.
                 </p>
-                <img src="merge.png" >
+                <img src="img/merge.png" >
+            </div>
+            <div id='description'>
+                <h3>git revert [hash_do_commit ou nome_do_commit]</h3>
+                <p>
+                    Esse comando cria um novo commit ignorando os commit passados em seu parametro.
+                    Bastante facil de se utilizar além do fato de por ser um commit, tem a possibilidade de ser revertido pelo proprio git revert.
+                </p>
             </div>
             <div id="description">
                 <h3>$ nano</h3>
