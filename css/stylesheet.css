@@ -19,6 +19,27 @@ body {
     margin: 0;
 }
 
+.top-botao{
+	background-color:white;
+	padding: 20px;
+	width: 80px;
+	border-radius: 20px;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.top-botao a{
+	text-decoration: none;
+	padding: 20px;
+	color: black;
+}
+
+.mascara {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .background-color-text{
     display: flex;
     flex-direction: row;
@@ -47,6 +68,11 @@ h1{
 .logo img{
     width: auto;
     height: 100%;
+}
+
+.title-h1 {
+    width: 90%;
+    margin: 0 auto;
 }
 
 footer{
