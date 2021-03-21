@@ -70,13 +70,6 @@ h1{
     font-size: 1.8em;
 }
 
-#content {
-    animation: aparecer 1s;
-    margin: 2vw;
-    background-color: #e0e0e0;
-    padding: 2%;
-}
-
 footer{
     animation: aparecer 1s;
     width: 100vw;
@@ -90,10 +83,14 @@ footer{
 
 .description{
     animation: aparecer 1s;
-    margin: 2vw;
+    margin: 2vw 4vw 2vw;
     background-color: #e0e0e0;
     padding: 2%;
     border-radius: 5px;
+}
+
+#content {
+    border-radius: 0;
 }
 
 .description img{
