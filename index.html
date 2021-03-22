@@ -31,25 +31,26 @@
         <ul id="lista">
             <li><b>Git Init</b> - Inicializa um repositório git em um diretório ou reinicializa um existente.</li>
             <li><b>Git Status</b> - Apresenta o status atual do repositório.</li>
-            <li><b>Git log</b> - Mostra todo o histórico dos commits</li>
-            <li><b>Git branch [nome_da_branch]</b> - Cria uma nova branch</li>
-            <li><b>Git checkout</b> - Navegar pelas branch's criadas</li>
-            <li><b>Git clone</b> - Cria um clone de um repositório do github</li>
+            <li><b>Git log</b> - Mostra todo o histórico dos commits.</li>
+            <li><b>Git branch [nome_da_branch]</b> - Cria uma nova branch.</li>
+            <li><b>Git checkout</b> - Navegar pelas branch's criadas.</li>
+            <li><b>Git clone</b> - Cria um clone de um repositório do github.</li>
             <li><b>Git add [nome_do_arquivo]</b> - Armazena o arquivo ou arquivos no
                 no seu <em>Stage</em> para que sejam <em>comitados</em> posteriormente.</li>
-            <li><b>git config --global user.name "[seu-nome]"</b> - Setar um usuário</li>
-            <li><b>git config --global user.email [seu-email]</b>- Setar um email</li>
-            <li><b>Git ignore </b> - Ignorando Arquivos</li>
+            <li><b>Git config --global user.name "[seu-nome]"</b> - Setar um usuário.</li>
+            <li><b>Git config --global user.email [seu-email]</b>- Setar um email.</li>
+            <li><b>Git ignore </b> - Ignorando Arquivos.</li>
             <li><b>Git merge </b>-Permite que você pegue as linhas de desenvolvimento independentes criadas pelo git
                 branch e as integre em um único branch.</li>
-            <li><b>git revert [hash_do_commit ou nome_do_commit]</b> - Permite reverter commits existentes</li>
+            <li><b>Git revert [hash_do_commit ou nome_do_commit]</b> - Permite reverter commits existentes.</li>
         </ul>
         <br>
         <h3>Comandos Linux</h3>
         <ul id="lista">
             <li><b>mkdir [nome]</b> - Cria um diretório/pasta para trabalhar em um projeto.</li>
+            <li><b>rm [nome do arquivo]</b> - Remove um arquivo, lista de arquivos ou pasta.</li>
             <li><b>ls</b> - Lista todos os arquivos do diretório.</li>
-            <li><b>cd</b> - Acessa uma determinada pasta (diretório)</li>
+            <li><b>cd</b> - Acessa uma determinada pasta (diretório).</li>
         </ul>
     </section>
     <section>
@@ -161,6 +162,39 @@
                 cria um arquivo em HTML.
                 OBS: É indicado o uso do nano para a criação de arquivos pequenos. Arquivos muito grandes é
                 aconselhável o uso de IDE.
+            </p>
+        </div>
+        <div class="description" anima_quando_visivel="aparece">
+            <h3>$ rm</h3>
+            <p>Este comando remove uma pasta ou arquivo, por exemplo, para apagar um arquivo text.txt
+            <p class="code">
+                $ rm test.txt
+            </p>
+            o Comando pode ser seguido por -r, -f, -i ou -v, respectivamente:
+            <p class="comment">
+                // Apaga pastas e subpastas
+            </p>
+            <p class="code">
+                $ rm -r pasta_de_atividades
+            </p>
+            <p class="comment">
+                // Ignora o pedido de confirmação para apagar um arquivo ou pasta
+            </p>
+            <p class="code">
+                $ rm -f pasta_de_atividades
+            </p>
+            <p class="comment">
+                // Pede confirmação para apagar arquivo ou pasta
+            </p>
+            <p class="code">
+                $ rm -i pasta_de_atividades
+            </p>
+            <p class="comment">
+                // Lista arquivos deletados
+            </p>
+            <p class="code">
+                $ rm -v pasta_de_atividades
+            </p>
             </p>
         </div>
     </section>
