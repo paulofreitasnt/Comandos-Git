@@ -106,15 +106,6 @@ footer{
     text-align: center;
 }
 
-[anima_quando_visivel="aparece"] { 
-    transition: 1s;
-    opacity: 0.5;
-}
-
-[anima_quando_visivel="aparece"].visivel {
-    opacity: 1;
-}
-
 [anima_quando_visivel="cresce"] { 
     transition: .5s;
     transform: scale(0);
