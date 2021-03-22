@@ -1,3 +1,11 @@
+/*Variáveis globais das cores definidas*/
+:root {
+    --black: #000000;
+    --black-body: #181818;
+    --white: #ffffff;
+    --color-description: #e0e0e0;
+  }
+
 li { 
     list-style-type: circle; 
     color: rgb(0, 0, 0);
@@ -13,19 +21,19 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color:#181818;
+    color:var(--black-body);
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     margin: 0;
 }
 
 .top-botao{
-    animation: aparecer 1s;
-	background-color:white;
+	background-color:var(--white);
+  animation: aparecer 1s;
 	padding: 20px;
 	width: 120px;
 	border-radius: 20px;
-	color: black;
+	color: var(--black);
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
@@ -34,7 +42,7 @@ body {
 .top-botao a{
 	text-decoration: none;
 	padding: 20px;
-	color: black;
+	color: var(--black);
 }
 
 .mascara {
@@ -48,8 +56,8 @@ body {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     opacity: 85%;
     margin: 0;
     padding: 1%;
@@ -79,7 +87,7 @@ h1{
 
 footer{
     height: auto;
-    color: #fff;
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +107,7 @@ footer{
 .description{
     animation: aparecer 1s;
     margin: 2vw 4vw 2vw;
-    background-color: #e0e0e0;
+    background-color: var(--color-description);
     padding: 2%;
     border-radius: 5px;
 }
