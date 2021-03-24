@@ -1,0 +1,265 @@
+/*Variáveis globais das cores definidas*/
+:root {
+    --black: #000000;
+    --black-body: #181818;
+    --white: #ffffff;
+    --color-description: #e0e0e0;
+  }
+
+li { 
+    list-style-type: circle; 
+    color: rgb(0, 0, 0);
+}
+
+/* Importando fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kZXxlbnwwfHwwfA%3D%3D&amp;ixlib=rb-1.2.1&amp;w=1000&amp;q=80")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:var(--black-body);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.top-botao{
+	background-color:var(--white);
+  animation: aparecer 1s;
+	padding: 20px;
+	width: 120px;
+	border-radius: 20px;
+	color: var(--black);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.top-botao a{
+	text-decoration: none;
+	padding: 20px;
+	color: var(--black);
+}
+
+.mascara {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.background-color-text{
+    animation: aparecer 1s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    opacity: 85%;
+    margin: 0;
+    padding: 1%;
+}
+
+header{
+    font-size: unset;
+}
+
+h1{
+    font-size: 1.8em;
+}
+
+.logo{
+    height: 60px;
+}
+
+.logo img{
+    width: auto;
+    height: 100%;
+}
+
+.title-h1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    height: auto;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.description{
+    animation: aparecer 1s;
+    margin: 2vw 4vw 2vw;
+    background-color: var(--color-description);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#content {
+    border-radius: 0;
+}
+
+.description img{
+    anima_quando_visivel:scale-in;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+[anima_quando_visivel="cresce"] { 
+    transition: .5s;
+    transform: scale(0);
+}
+
+[anima_quando_visivel="cresce"].visivel {
+    transform: scale(1);
+}
+
+[anima_quando_visivel="abre"] { 
+    transition: .5s;
+    transform: scaleY(0);
+}
+
+[anima_quando_visivel="abre"].visivel {
+    transform: scale(1);
+    transform: scaleY(1);
+}
+  
+*::-webkit-scrollbar {
+width: 18px;
+}
+
+*::-webkit-scrollbar-track {
+background: rgb(0, 0, 0, 0.5);
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: rgb(238, 112, 10);
+border-radius: 5px;
+}
+
+.code {
+    background-color: #353434;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.comment {
+    color:rgb(20, 119, 0);
+    font-size: 16px;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("/img/contato.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #353434;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #353434;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
